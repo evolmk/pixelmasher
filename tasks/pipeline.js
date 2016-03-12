@@ -32,7 +32,7 @@ var jsFilesToInject = [
   'js/dependencies/**/*.js',
 
   // Load vendor dependencies
-  'vendor/**/*.js',
+  //'vendor/plugin/file.js',
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
