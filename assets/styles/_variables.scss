@@ -1,0 +1,34 @@
+/* =====================================
+   Variables
+   ===================================== */
+
+//#2E3A52 [dark blue-purple]
+//#2C3C4B [dark blue]
+//#3E71AC [blue]
+//#5E83AE [light blue-purple]
+//#AFBCCC [very light blue]
+//#6fa7d7 [bright blue]
+//#EF7020 [orange]
+//#DF6C23 [orange dull]
+//#45B66E [green success]
+
+/*theme*/
+$color-primary: #3E71AC; //links
+$color-secondary: #5E83AE; //labels, alt text color
+$color-tertiary: #AFBCCC; //background hovers and highlights
+
+$color-text: #666; //text
+$color-text-light: #727D83; //text lighter, greyish blue
+
+/*element specific*/
+$color-header-bg: #2E3A52;
+$color-prefooter-bg: #2E3A52;
+$color-footer-bg: #2E3A52;
+$color-form-label: #D46356; //purple=#4E6EB1
+$color-heading: #4A6380;
+$color-panel-heading: #707A84;
+$color-panel-inner-heading: #D46356;  //#b1b1b1
+$color-accordion-title: #D46356;  //orange
+$color-accordion-title-hover: #C33929;  //darker-bright orange
+
+$nav-menu-hover-color: #21293A;  //was #55616f

@@ -1,0 +1,49 @@
+/* =====================================
+   Mixins
+   ===================================== */
+
+/*border radius*/
+/*ex: .klass { @include border-radius(10px); } */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+/*vertical align*/
+/*ex: .klass { @include vertical-align(); } */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*truncate text*/
+/*ex: .klass { @include truncate(250px); } */
+@mixin truncate($width: 100%, $display: inline-block) {
+  display: $display;
+  width: $width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*box-sizing override: content-box || border-box */
+@mixin box-sizing($type: content-box) {
+  -webkit-box-sizing: $type;
+  -moz-box-sizing: $type;
+  box-sizing: $type;
+}
+
+/*transition*/
+/*ex: .klass { @include transition(opacity 1.0s); } */
+@mixin transition($value: opacity 0.075s) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -ms-transition: $value;
+  -o-transition: $value;
+  transition: $value;
+}
