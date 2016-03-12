@@ -4,8 +4,8 @@ Sails + Jade + Sass + Bootstrap
 
 ### Dependencies
 
-Ruby 2.2.0
-Postgresql
+- Postgresql: install database
+- Postico: postgres gui
 
 ### Prerequisites
 
