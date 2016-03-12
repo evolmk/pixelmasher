@@ -2,7 +2,13 @@
 
 Sails + Jade + Sass + Bootstrap
 
-## Setup
+### Prerequisites
+
+```bash
+npm install sails -g
+```
+
+### Setup
 
 ```bash
 git https://github.com/evolmk/pixelmasher.git
@@ -10,7 +16,7 @@ cd pixelmasher
 npm install
 ```
 
-## Run
+### Run
 
 ```bash
 sails lift
