@@ -1,4 +1,4 @@
-# Pixelmasher sails.js protfolio app
+# Pixelmasher Portfolio App
 
 Sails + Jade + Sass + Bootstrap
 
