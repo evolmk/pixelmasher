@@ -1,0 +1,30 @@
+{
+  "name": "sails-boilerplate",
+  "version": "0.0.1",
+  "homepage": "https://github.com/evolmk/pixelmasher.git",
+  "author": [
+    "Mike Kuczynski <evolmk@gmail.com>"
+  ],
+  "description": "sails portfolio app",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "sails",
+    "node",
+    "sass",
+    "bower",
+    "angular"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
