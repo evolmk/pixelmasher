@@ -31,7 +31,8 @@ var jsFilesToInject = [
   // Dependencies like jQuery, or Angular are brought in here
   'js/dependencies/**/*.js',
 
-  // Load specific dependencies here
+  // Load vendor dependencies
+  'vendor/**/*.js',
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
