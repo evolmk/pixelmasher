@@ -30,7 +30,7 @@ var jsFilesToInject = [
   'js/sails.io.js',
 
   // Dependencies like jQuery, or Angular are brought in here
-  'js/sails.io.js',
+  //'js/sails.io.js',
 
   // Load vendor dependencies
   //'vendor/plugin/file.js',
