@@ -18,7 +18,9 @@
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
   'styles/bootstrap.css',
-  'styles/app.css'
+  'styles/app.css',
+  'styles/libs/font-awesome/css/font-awesome.min.css',
+  'styles/libs/animate.min.css'
 ];
 
 
@@ -27,13 +29,17 @@ var cssFilesToInject = [
 var jsFilesToInject = [
 
   // Load sails.io before everything else
-  'js/sails.io.js',
+  'js/libs/sails.io.js',
 
   // Dependencies like jQuery, or Angular are brought in here
-  //'js/sails.io.js',
+  'js/libs/jquery.js',
+  'js/libs/bootstrap.min.js',
 
   // Load vendor dependencies
-  //'vendor/plugin/file.js',
+  'js/libs/jquery.easing.min.js',
+  'js/libs/jquery.fittext.js',
+  'js/libs/wow.min.js',
+  'js/libs/creative.js',
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
