@@ -20,8 +20,14 @@ module.exports = function(grunt) {
     dev: {
       files: [{
         expand: true,
+        cwd: 'assets/styles/libs/',
+        src: ['bootstrap.scss'],
+        dest: '.tmp/public/styles/',
+        ext: '.css'
+      },{
+        expand: true,
         cwd: 'assets/styles/',
-        src: ['application.scss'],
+        src: ['app.scss'],
         dest: '.tmp/public/styles/',
         ext: '.css'
       }]
