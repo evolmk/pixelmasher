@@ -83,7 +83,7 @@ module.exports.connections = {
   //}
 
   postgres: {
-    adapter: 'pixelmasher',
+    adapter: 'sails-postgresql',
     url: process.env.DATABASE_URL,
     pool: true
   }
