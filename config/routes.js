@@ -33,8 +33,8 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'client/home'
-  }
+    view: 'home/index'
+  },
 
   /***************************************************************************
   *                                                                          *
@@ -45,5 +45,18 @@ module.exports.routes = {
   * for configuration options and examples.                                  *
   *                                                                          *
   ***************************************************************************/
+
+  //Passport Routes
+  'get /login': {
+    view: 'auth/login'
+  },
+
+  'post /login': 'AuthController.login',
+
+  '/logout': 'AuthController.logout',
+
+  'get /signup': {
+    view: 'auth/signup'
+  }
 
 };

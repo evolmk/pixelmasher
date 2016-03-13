@@ -16,11 +16,25 @@ npm install -g foreman
 
 ### Setup
 
+clone repo
 ```bash
 git https://github.com/evolmk/pixelmasher.git
 cd pixelmasher
-cp .env.example .env //then make database changes to .env
+```
+update your own database settings
+```bash
+cp .env.example .env
+```
+
+install dependencies
+```bash
 npm install
+```
+
+create database
+```bash
+psql -h localhost
+create database pixelmasher;
 ```
 
 ### Run
