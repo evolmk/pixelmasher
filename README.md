@@ -61,6 +61,7 @@ heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-mult
 
 deploy
 ```bash
+heroku login
 git add .
 git commit -m "commit_message"
 git push heroku master
