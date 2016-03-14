@@ -2,16 +2,15 @@
    Mixins
    ===================================== */
 
-/*border radius*/
-/*ex: .klass { @include border-radius(10px); } */
+//Border Radius
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
-/*vertical align*/
-/*ex: .klass { @include vertical-align(); } */
+
+//Vertical Align
 @mixin vertical-align($position: relative) {
   position: $position;
   top: 50%;
@@ -19,8 +18,8 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/*truncate text*/
-/*ex: .klass { @include truncate(250px); } */
+
+//Text Utils
 @mixin truncate($width: 100%, $display: inline-block) {
   display: $display;
   width: $width;
@@ -28,14 +27,42 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/*box-sizing override: content-box || border-box */
+//Elements
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//Img Retina
+//@include image-2x("logo2x.png", 100px, 25px);
+@mixin image-2x($image, $width, $height) {
+  @media (min--moz-device-pixel-ratio: 1.3),
+  (-o-min-device-pixel-ratio: 2.6/2),
+  (-webkit-min-device-pixel-ratio: 1.3),
+  (min-device-pixel-ratio: 1.3),
+  (min-resolution: 1.3dppx) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}
+//Img Utils
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+//Box Sizing (content-box || border-box)
 @mixin box-sizing($type: content-box) {
   -webkit-box-sizing: $type;
   -moz-box-sizing: $type;
   box-sizing: $type;
 }
-/*transition*/
-/*ex: .klass { @include transition(opacity 1.0s); } */
+
+//Transition
 @mixin transition($value: opacity 0.075s) {
   -webkit-transition: $value;
   -moz-transition: $value;
@@ -48,18 +75,54 @@
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
-@mixin background-cover() {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+
+//Opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
 }
+
+//Breakpoints
+//.klasss {
+//  @include bp-desktop {
+//    font-size: 12px;
+//  }
+//}
+@mixin bp-desktop {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+@mixin bp-tablet {
+  @media only screen and (min-width: 481px) and (max-width: 991px)  {
+    @content;
+  }
+}
+@mixin bp-mobile {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+//Clearfix
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+//Buttons
 @mixin button-variant($color, $background, $border) {
   color: $color;
   background-color: $background;
   border-color: $border;
   @include transition-all();
-
   &:hover,
   &:focus,
   &.focus,
@@ -88,12 +151,13 @@
       border-color: $border;
     }
   }
-
   .badge {
     color: $background;
     background-color: $color;
   }
 }
+
+//Fonts
 @mixin sans-serif-font() {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
