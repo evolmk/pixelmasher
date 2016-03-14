@@ -10,7 +10,6 @@ html(lang='en')
 
     // Fonts
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800', rel='stylesheet', type='text/css')
-    link(href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic', rel='stylesheet', type='text/css')
 
     // STYLES
     link(rel="stylesheet", href="/styles/bootstrap.css")
@@ -24,14 +23,14 @@ html(lang='en')
       .container-fluid
         // Brand and toggle get grouped for better mobile display
         .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#site-navbar')
             span.sr-only Toggle navigation
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand.page-scroll(href='#page-top') Start Bootstrap
+          a.navbar-brand.page-scroll(href='#page-top') Pixelmasher
         // Collect the nav links, forms, and other content for toggling
-        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        #site-navbar.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li
               a.page-scroll(href='#about') About
@@ -44,7 +43,7 @@ html(lang='en')
         // /.navbar-collapse
       // /.container-fluid
     block body
-    footer
+    footer#contact
       .container
         .row
           .col-lg-8.col-lg-offset-2.text-center
@@ -61,6 +60,7 @@ html(lang='en')
               a(href='mailto:email@email.com') email@email.com
     // SCRIPTS
     script(src="/js/libs/sails.io.js")
+    script(src="/vendor/angular/angular.min.js")
     script(src="/js/libs/jquery.js")
     script(src="/js/libs/bootstrap.min.js")
     script(src="/js/libs/jquery.easing.min.js")

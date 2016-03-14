@@ -8,7 +8,7 @@ body {
   width: 100%;
 }
 body {
-  @include serif-font();
+  @include sans-serif-font();
 }
 hr {
   border-color: $theme-primary;
@@ -20,20 +20,14 @@ hr.light {
 }
 a {
   @include transition-all();
-;
   color: $theme-primary;
   &:hover,
   &:focus {
     color: darken($theme-primary, 10%);
   }
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include sans-serif-font();
+h1, h2, h3, h4, h5, h6 {
+
 }
 p {
   font-size: 16px;
@@ -60,18 +54,19 @@ aside {
 .no-padding {
   padding: 0;
 }
+.font-light {
+  font-weight: 300;
+}
 // Navigation
 
 .navbar-default {
   background-color: white;
-  border-color: lighten($theme-dark, 5%);
-  @include sans-serif-font();
+  border: none;
   @include transition-all();
 
   .navbar-header .navbar-brand {
     color: $theme-primary;
-    @include sans-serif-font();
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     &:hover,
     &:focus {
@@ -83,7 +78,7 @@ aside {
       > a,
       > a:focus {
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: 600;
         font-size: 13px;
         color: $theme-dark;
         &:hover {
@@ -105,6 +100,12 @@ aside {
   @media (min-width: 768px) {
     background-color: transparent;
     border-color: lighten(white, 30%);
+    .container-fluid {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 45px;
+      padding-right: 45px;
+    }
     .navbar-header .navbar-brand {
       color: lighten(white, 70%);
       &:hover,
@@ -148,7 +149,7 @@ header {
   min-height: auto;
   @include background-cover();
   background-position: center;
-  background-image: url('../img/header.jpg');
+  background-image: url('/img/hero-home.jpg');
   text-align: center;
   color: white;
   .header-content {
@@ -158,20 +159,20 @@ header {
     width: 100%;
     .header-content-inner {
       h1 {
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-top: 0;
-        margin-bottom: 0;
-      }
-      hr {
-        margin: 30px auto;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        color: #f3f3f3;
+        span {
+          margin-left: 10px;
+        }
       }
       p {
+        font-size: 18px;
         font-weight: 300;
-        color: white;
-        opacity: 0.7;
-        font-size: 16px;
-        margin-bottom: 50px;
+        line-height: 32px;
+        letter-spacing: 0;
+        margin-bottom: 30px;
       }
     }
   }
@@ -189,16 +190,16 @@ header {
         margin-left: auto;
         margin-right: auto;
         p {
-          font-size: 18px;
-          max-width: 80%;
-          margin-left: auto;
-          margin-right: auto;
+          font-size: 21px;
+          font-weight: 300;
+          line-height: 35px;
+          letter-spacing: 0;
+          margin-bottom: 35px;
         }
       }
     }
   }
 }
-
 // Footer
 footer {
   padding: 80px 0;
@@ -243,7 +244,6 @@ footer {
       transform: translateY(-50%);
       .project-category,
       .project-name {
-        @include sans-serif-font();
         padding: 0 15px;
       }
       .project-category {
@@ -295,7 +295,6 @@ footer {
   @include button-variant(white, $theme-primary, $theme-primary);
 }
 .btn {
-  @include sans-serif-font();
   border: none;
   border-radius: 300px;
   font-weight: 700;

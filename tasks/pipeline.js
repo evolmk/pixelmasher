@@ -32,8 +32,10 @@ var jsFilesToInject = [
   'js/libs/sails.io.js',
 
   // Dependencies like jQuery, or Angular are brought in here
+  'vendor/angular/angular.min.js',
   'js/libs/jquery.js',
   'js/libs/bootstrap.min.js',
+
 
   // Load vendor dependencies
   'js/libs/jquery.easing.min.js',
