@@ -61,9 +61,10 @@ aside {
 
 // Navigation
 .navbar-default {
-  background-color: white;
   border: none;
   @include transition(all 0.3s);
+  background-color: transparent;
+  padding: 20px 0; //desktop is 30px 0;
 
   //smaller nav bar
   &.affix-top {
@@ -96,6 +97,9 @@ aside {
       &.light { display: none; }
       &.dark { display: inline; }
     }
+    @include bp-mobile() {
+      margin-left: 15px;
+    }
   }
   .nav {
     border: none;
@@ -121,6 +125,10 @@ aside {
         }
       }
     }
+  }
+  &.affix {
+    padding: 3px 0;
+    background-color: rgba(255, 255, 255, 0.9);
   }
   @include bp-desktop() {
     background-color: transparent;
