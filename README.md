@@ -54,6 +54,10 @@ add `Procfile` file to app's root
 web: node app.js
 
 ```
+add buildpack to heroku
+```bash
+heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git
+```
 
 deploy
 ```bash
