@@ -18,9 +18,9 @@
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
   'styles/bootstrap.css',
-  'styles/app.css',
   'styles/libs/font-awesome/css/font-awesome.min.css',
-  'styles/libs/animate.min.css'
+  'styles/libs/animate.min.css',
+  'styles/app.css'
 ];
 
 
