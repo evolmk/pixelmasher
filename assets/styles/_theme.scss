@@ -122,7 +122,7 @@ aside {
       }
     }
   }
-  @media (min-width: 768px) {
+  @include bp-desktop() {
     background-color: transparent;
     //border-color: lighten(white, 30%);
     padding: 30px 0;
@@ -189,7 +189,7 @@ header {
     width: 100%;
     .header-content-inner {
       h1 {
-        font-size: 36px;
+        font-size: 28px;
         font-weight: 600;
         margin-bottom: 25px;
         text-shadow: rgba(0,0,0,0.8)0 2px 9px;
@@ -206,9 +206,12 @@ header {
         margin-bottom: 30px;
         text-shadow: rgba(0,0,0,0.8)0 2px 9px;
       }
+      .btn {
+
+      }
     }
   }
-  @media (min-width: 768px) {
+  @include bp-desktop() {
     min-height: 100%;
     .header-content {
       position: absolute;
@@ -221,11 +224,23 @@ header {
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
+        h1 {
+          font-size: 32px;
+          font-weight: 600;
+          margin-bottom: 45px;
+          text-shadow: rgba(0,0,0,0.8)0 2px 9px;
+          span {
+            margin-left: 10px;
+          }
+        }
         p {
           font-size: 22px;
           line-height: 35px;
           letter-spacing: 0;
           margin-bottom: 35px;
+        }
+        .btn {
+
         }
       }
     }
@@ -295,7 +310,7 @@ footer {
       opacity: 1;
     }
   }
-  @media (min-width: 768px) {
+  @include bp-desktop() {
     .portfolio-box-caption {
       .portfolio-box-caption-content {
         .project-category {
@@ -335,11 +350,11 @@ footer {
 .btn {
   border: none;
   border-radius: 300px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .btn-xl {
-  padding: 15px 30px;
+  padding: 15px 32px;
 }
 
 
