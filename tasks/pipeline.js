@@ -19,6 +19,7 @@
 var cssFilesToInject = [
   'styles/bootstrap.css',
   'styles/libs/font-awesome/css/font-awesome.min.css',
+  'styles/libs/simple-line-icons/css/simple-line-icons.css',
   'styles/libs/animate.min.css',
   'styles/app.css'
 ];
@@ -32,8 +33,9 @@ var jsFilesToInject = [
   'js/libs/sails.io.js',
 
   // Dependencies like jQuery, or Angular are brought in here
-  'vendor/angular/angular.min.js',
   'js/libs/jquery.js',
+  'vendor/angular/angular.min.js',
+  'vendor/angular-route/angular-route.min.js',
   'js/libs/bootstrap.min.js',
 
   // Load vendor dependencies

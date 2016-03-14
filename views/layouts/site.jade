@@ -14,6 +14,7 @@ html(lang='en')
     // STYLES
     link(rel="stylesheet", href="/styles/bootstrap.css")
     link(rel="stylesheet", href="/styles/libs/font-awesome/css/font-awesome.min.css")
+    link(rel="stylesheet", href="/styles/libs/simple-line-icons/css/simple-line-icons.css")
     link(rel="stylesheet", href="/styles/libs/animate.min.css")
     link(rel="stylesheet", href="/styles/app.css")
     // STYLES END
@@ -45,25 +46,25 @@ html(lang='en')
         // /.navbar-collapse
       // /.container-fluid
     block body
-    footer#contact
+    section#footer
       .container
         .row
           .col-lg-8.col-lg-offset-2.text-center
             h2.section-heading Let's Get In Touch!
-            hr.primary
             p
               | Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!
           .col-lg-4.col-lg-offset-2.text-center
-            i.fa.fa-phone.fa-3x.wow.bounceIn
+            i.fa.fa-mobile.fa-3x.wow.bounceIn
             p 123-456-6789
           .col-lg-4.text-center
             i.fa.fa-envelope-o.fa-3x.wow.bounceIn(data-wow-delay='.1s')
             p
-              a(href='mailto:email@email.com') email@email.com
+              a(href='mailto:evolmk@gmail.com') evolmk@gmail.com
     // SCRIPTS
     script(src="/js/libs/sails.io.js")
-    script(src="/vendor/angular/angular.min.js")
     script(src="/js/libs/jquery.js")
+    script(src="/vendor/angular/angular.min.js")
+    script(src="/vendor/angular-route/angular-route.min.js")
     script(src="/js/libs/bootstrap.min.js")
     script(src="/js/libs/jquery.easing.min.js")
     script(src="/js/libs/jquery.fittext.js")
