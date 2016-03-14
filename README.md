@@ -43,3 +43,19 @@ create database pixelmasher;
 nf start
 sails lift (without node foreman)
 ```
+
+### Deploy to Heroku
+create app
+```bash
+heroku create pixelmasher-app
+```
+add `Procfile` file to app's root
+```
+web: node app.js
+
+```
+
+deploy
+```bash
+git push heroku master
+```
