@@ -36,12 +36,13 @@ var jsFilesToInject = [
   'js/libs/jquery.js',
   'js/libs/bootstrap.min.js',
 
-
   // Load vendor dependencies
   'js/libs/jquery.easing.min.js',
   'js/libs/jquery.fittext.js',
   'js/libs/wow.min.js',
-  'js/libs/creative.js',
+
+  // Load layout script
+  'js/layout.js',
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
