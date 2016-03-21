@@ -33,22 +33,28 @@ var jsFilesToInject = [
   'js/libs/sails.io.js',
 
   // Dependencies like jQuery, or Angular are brought in here
+  'vendor/angular/angular.js',
+  'vendor/angular-animate/angular-animate.js',
+  'vendor/angular-bootstrap/ui-bootstrap.js',
+  'vendor/angular-resource/angular-resource.js',
+  'vendor/angular-route/angular-route.js',
+
   'js/libs/jquery.js',
-  'vendor/angular/angular.min.js',
-  'vendor/angular-route/angular-route.min.js',
   'js/libs/bootstrap.min.js',
 
   // Load vendor dependencies
   'js/libs/jquery.easing.min.js',
   'js/libs/jquery.fittext.js',
   'js/libs/wow.min.js',
+  'js/libs/classie.js',
 
-  // Load layout script
-  'js/layout.js',
+  // Load modules
+  'js/app.js',
+  'js/layout.js'
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
-  'js/**/*.js'
+  //'js/**/*.js'
 ];
 
 

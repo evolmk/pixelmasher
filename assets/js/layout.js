@@ -1,9 +1,45 @@
-/*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+/**
+ * cbpAnimatedHeader.js v1.0.0
+ * http://www.codrops.com
  */
+var cbpAnimatedHeader = (function() {
 
+  var docElem = document.documentElement,
+    header = document.querySelector( '.navbar-default' ),
+    didScroll = false,
+    changeHeaderOn = 300;
+
+  function init() {
+    window.addEventListener( 'scroll', function( event ) {
+      if( !didScroll ) {
+        didScroll = true;
+        setTimeout( scrollPage, 250 );
+      }
+    }, false );
+  }
+
+  function scrollPage() {
+    var sy = scrollY();
+    if ( sy >= changeHeaderOn ) {
+      classie.add( header, 'navbar-shrink' );
+    }
+    else {
+      classie.remove( header, 'navbar-shrink' );
+    }
+    didScroll = false;
+  }
+
+  function scrollY() {
+    return window.pageYOffset || docElem.scrollTop;
+  }
+
+  init();
+
+})();
+
+/**
+ * Layout
+ */
 (function($) {
     "use strict"; // Start of use strict
 
@@ -17,10 +53,10 @@
     });
 
     // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    });
+    //$('body').scrollspy({
+    //    target: '.navbar-fixed-top',
+    //    offset: 51
+    //});
 
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
