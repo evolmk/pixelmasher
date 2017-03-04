@@ -5,7 +5,7 @@
   "description": "sails portfolio app",
   "keywords": [],
   "dependencies": {
-    "bcrypt": "^0.8.5",
+    "bcrypt": "latest",
     "bower": "^1.7.7",
     "forever": "^0.15.1",
     "grunt": "0.4.5",
