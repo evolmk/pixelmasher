@@ -348,8 +348,20 @@ footer {
 .portfolio-box {
   position: relative;
   display: block;
-  max-width: 650px;
+  width: auto;
+  height: 350px;
   margin: 0 auto;
+  overflow: hidden;
+  .img-responsive {
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+    -moz-transition: all .3s ease; /* Firefox */
+    -ms-transition: all .3s ease; /* IE 9 */
+    -o-transition: all .3s ease; /* Opera */
+    transition: all .3s ease;
+  }
   .portfolio-box-caption {
     color: white;
     opacity: 0;
@@ -386,6 +398,14 @@ footer {
     .portfolio-box-caption {
       opacity: 1;
     }
+    .img-responsive {
+      $hover-scale: 1.1;
+      -webkit-transform:scale($hover-scale); /* Safari and Chrome */
+      -moz-transform:scale($hover-scale); /* Firefox */
+      -ms-transform:scale($hover-scale); /* IE 9 */
+      -o-transform:scale($hover-scale); /* Opera */
+      transform:scale($hover-scale);
+    }
   }
   @include bp-desktop() {
     .portfolio-box-caption {
@@ -414,6 +434,12 @@ footer {
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
+}
+
+.no-gutter-border  > [class*='col-'] {
+  padding-right: 1px;
+  padding-bottom: 1px;
+  padding-left: 0px;
 }
 
 
