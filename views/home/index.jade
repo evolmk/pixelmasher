@@ -6,21 +6,27 @@ block body
       .header-content-inner
         h1 hello, i'm Mike Kuczynski.
           div.font-light a professional front-end web developer
-        a.btn.btn-primary.btn-xl.page-scroll(href='#portfolio') Browse My Work
   section#about.bg-primary
     .container
       .row
-        .col-lg-8.col-lg-offset-2.text-center
-          h2.section-heading About
-          p.text-faded
-            | About
-  section#services
+        .col-lg-10.col-lg-offset-1.text-center
+          h2.section-heading About Mike
+          p.leadin
+            | I'm 34 initially from NJ, now living in Sunny Florida.  I'm a freelance web designer & web developer, with background in all modern web technologies.
+            | Over the years I've worked with small & large companies building intuitive web apps, creative websites, and implementing seo & marketing campaigns .
+          .social-links
+            h4 Follow Me
+            a.social(href='https://twitter.com/evolmk' target='_blank')
+              i.fa.fa-twitter(aria-hidden='true')
+            a.social(href='https://www.facebook.com/evolmk' target='_blank')
+              i.fa.fa-facebook(aria-hidden='true')
+  section#services.bg-white
     .container
       .row
         .col-lg-12.text-center
           h2.section-heading Services
-          p.text-faded
-            | Sevices Description and text will go here.  this will be 1-2 sentences summarizing how services will benefit user
+          p.leadin
+            | I provide a wide range of services including print design, web design, web development, mobile application development, and consulting.
     .container
       .row
         .col-md-3.col-xs-12.text-center
@@ -43,7 +49,7 @@ block body
             i.fa.fa-4x.fa-mobile.wow.bounceIn.text-primary(data-wow-delay='.3s')
             h3 Mobile
             p.text-muted You have to make your websites with love these days!
-  section#portfolio.bg-primary
+  section#portfolio.bg-secondary
     .container
       .row
         .col-lg-12.text-center
