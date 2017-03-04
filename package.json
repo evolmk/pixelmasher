@@ -39,5 +39,7 @@
   },
   "author": "mike",
   "license": "",
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt-contrib-sass": "^1.0.0"
+  }
 }
