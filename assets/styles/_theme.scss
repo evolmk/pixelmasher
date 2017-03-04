@@ -45,7 +45,7 @@ h4, .h4 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.5;
   margin-bottom: 22px;
   &.text-faded {
@@ -53,7 +53,9 @@ p {
     margin-bottom: 40px;
   }
   &.leadin {
+    font-size: 18px;
     margin-bottom: 40px;
+    opacity: 0.8;
   }
 }
 
@@ -70,9 +72,9 @@ p {
 }
 .bg-secondary {
   background-color: $theme-secondary;
-  color: #fff;
+  color: #666;
   h2 {
-    color: #fff;
+    color: #333;
   }
   .text-faded {
     color: rgba(255,255,255,0.6);
